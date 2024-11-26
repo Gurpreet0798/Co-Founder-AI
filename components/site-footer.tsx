@@ -81,7 +81,7 @@ export function SiteFooter() {
                         Infinity SAAS
                      </span>
                   </Link>
-                  <p className="max-w-xs">Built By Team - Aryan </p>
+                  <p className="max-w-xs">Built By - Aryan </p>
                </div>
                <div className="grid grid-cols-1 gap-8 sm:grid-cols-3 sm:gap-10">
                   {footerNavs.map(nav => (

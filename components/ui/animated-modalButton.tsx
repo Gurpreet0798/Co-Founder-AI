@@ -39,6 +39,10 @@ export function AnimatedModalButton() {
       alert("Please upload Emails")
       return
     }
+    if(campaignInfo.contact.length != 10 ){
+      alert("Please Provide Valid Contact Number")
+      return
+    }
     if(campaignInfo.contact =="" || campaignInfo.founder =="" || campaignInfo.industry =="" || campaignInfo.location =="" || campaignInfo.name =="" || campaignInfo.purpose =="" || campaignInfo.website ==""){
       alert("Please Fill All Fields")
       return 
