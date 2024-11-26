@@ -39,7 +39,6 @@ export function ProcessLoader({handleOnClick}:any) {
       console.log(error)
     }finally{
       setLoading(false)
-      alert("AI Emails Sent Successfully!")
     }
   }
   return (

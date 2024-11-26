@@ -53,6 +53,7 @@ export function AnimatedModalButton() {
         body:JSON.stringify({campaignInfo,emails:emailsData})
       }
     )
+    alert("AI Emails Sent Successfully!")
   }
 
   return (
