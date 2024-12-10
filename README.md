@@ -1,50 +1,63 @@
-# Tutorial application: Create a web app that mints NFTs
+# Infinity SaaS
 
-This is the completed application from the tutorial [Create a web app that mints NFTs](https://docs.tezos.com/tutorials/create-an-nft/nft-taquito/).
+Infinity SaaS is a cutting-edge platform designed to help businesses scale their marketing and sales efforts with AI-powered tools and automations. This repository contains the source code for Infinity SaaS, enabling you to customize, extend, or contribute to its development.
 
-## Project structure
+## Features
 
-This project contains two applications that you run on your computer and one smart contract that you deploy to Tezos:
+- **AI-Powered Cold Email Automation**: Send personalized cold emails by scraping recipient websites and tailoring messages using business context.
+- **Gemini AI Integration**: Leverage advanced AI capabilities for generating insights, improving workflows, and automating repetitive tasks.
+- **Data-Driven Insights**: Analyze performance metrics to optimize your marketing and sales strategies.
 
-- The `frontend` folder contains a Vite and Svelte application that allows users to upload files and send a request to mint and NFT based on that file.
-- The `backend` folder contains an Express application that receives the files and NFT information and mints NFTs.
-- The `contract` folder contains a smart contract written in CameLIGO that manages the NFTs.
+## Tech Stack
 
-## Running the application
+- **Frontend**: Next.js
+- **Backend**: Express.js, Hono.js
+- **Database**: MongoDB
+- **AI Features**: Gemini AI
+- **Deployment**: Vercel, AWS
+- **Web Scraping**: Puppeteer, Cheerio
 
-To run the application, you must deploy (originate) the contract and start the backend and frontend applications:
+## Getting Started
 
-1. If you don't have an account on Pinata, set one up at <https://www.pinata.cloud/>.
+### Prerequisites
 
-1. On Pinata, create an API key with the `pinFileToIFPS` and `pinJSONToIFPS` permissions and copy the API key and secret.
+- Node.js v16+
+- MongoDB
+- Environment variables for API keys (see `.env.example`)
 
-1. Originate the `contract/NFTS_contract.mligo` file to Tezos, using the commented text at the end as the initial storage value.
-For example, you can use the web IDE for LIGO at <https://ide.ligolang.org/local> to originate the contract.
+### Installation
 
-1. Copy the address of the originated contract.
+1. **Clone the Repository**  
+   ```bash
+   git clone https://github.com/your-username/infinity-saas.git
+   cd infinity-saas
+   ```
 
-1. Start the backend app:
+2. **Install Dependencies**  
+   ```bash
+   npm install
+   ```
 
-   1. Go to the `backend` folder.
+3. **Set Up Environment Variables**  
+   Copy `.env.example` to `.env` and update the values for your API keys, MongoDB URI, and other configurations.  
+   ```bash
+   cp .env.example .env
+   ```
 
-   1. Install the dependencies by running `npm install`.
+4. **Run the Development Server**  
+   ```bash
+   npm run dev
+   ```
 
-   1. In the file `src/PinataKeys.ts`, enter your Pinata API key and secret.
+   The app will be accessible at `http://localhost:3000`.
 
-   1. Start the app by running `npm run dev`.
+### Scripts
 
-1. Start the frontend app:
+- `npm run dev`: Start the development server.
+- `npm run build`: Build the app for production.
+- `npm run start`: Start the production server.
+- `npm run lint`: Run linting checks.
+- `npm run test`: Run tests.
 
-   1. Go to the `frontend` folder.
 
-   1. Install the dependencies by running `npm install`.
-
-   1. Update the `src/App.svelte` file to set the address of the contract you originated in this line:
-
-      ```ts
-      const contractAddress = "KT1XKSMfewg86885Q25ezFdNVTr995XVhVCf";
-      ```
-
-   1. Start the app by running `npm run dev`.
-
-1. Open the frontend app in a web browser by going to <http://localhost:5173>.
+Built with ❤️ By Aryan
