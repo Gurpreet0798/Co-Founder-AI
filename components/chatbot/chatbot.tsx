@@ -16,7 +16,7 @@ type Message = {
 }
 
 const initialQuestions = [
-    { id: 1, question: "When is the Infinity SAAS?", answer: "Infinity SAAS is all one AI email marketing CRM that streamlines your marketing and outreach." },
+    { id: 1, question: "What is the Infinity SAAS?", answer: "Infinity SAAS is all one AI email marketing CRM that streamlines your marketing and outreach." },
     { id: 2, question: "Is free trial available?", answer: "Yes we provide a free trial for all users as a demo but recommend going with pro plan for bigger goals." },
     { id: 3, question: "What are the tasks I can perform with Infinity?", answer: "You can automate your marketing using AI and scrap email context with just a few clicks." },
     { id: 4, question: "Is there any Enterprise Licence available ?", answer: "Yes we provide Enterprise access on demand and recommend it for high scaling teams, contact us today for it." },
